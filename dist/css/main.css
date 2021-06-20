@@ -1,0 +1,20 @@
+.table {
+  border-collapse: collapse;
+  border: 1px solid black;
+  margin-top: 50px;
+  width: 80%;
+}
+
+.table__cell {
+  border: 1px solid black;
+  text-align: center;
+}
+
+.table__temp,
+.table__icon {
+  width: 20%;
+}
+
+.weather-icon {
+  max-width: 50px;
+}

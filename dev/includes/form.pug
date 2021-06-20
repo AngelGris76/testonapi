@@ -1,0 +1,5 @@
+include provincias
+form.form-places#form-places(action="GET")
+    select.form-places__province#select-province
+        each province in provinces 
+            option(value=province.value)= province.name

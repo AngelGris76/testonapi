@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba API del clima</title>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body> 
+    <form class="form-places" id="form-places" action="GET">
+      <select class="form-places__province" id="select-province">
+        <option value="buenosaires">Buenos Aires</option>
+        <option value="cordoba">Córdoba</option>
+        <option value="mendoza">Mendoza</option>
+      </select>
+    </form>
+    <table class="table"> 
+      <thead>
+        <tr> 
+          <th class="table__cell table__temp">Temp</th>
+          <th class="table__cell table__description">Descripcion </th>
+          <th class="table__cell table__icon">icono </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="table__info" id="table-info"> 
+          <td class="table__cell">8 grados</td>
+          <td class="table__cell">nublado</td>
+          <td class="table__cell"></td>
+        </tr>
+      </tbody>
+    </table>
+    <script src="js/index.js"> </script>
+  </body>
+</html>

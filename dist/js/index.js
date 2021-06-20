@@ -49,8 +49,8 @@ form.addEventListener("change", (e) => {
     apiConsult(e.target.value).then((result) => {
       //console.dir(tableInfo);
 
-      tableInfo.cells[0].firstChild.textContent = result.main.temp;
-      tableInfo.cells[1].firstChild.textContent = result.weather[0].description;
+      tableInfo.cells[0].innerHTML = result.main.temp;
+      tableInfo.cells[1].innerHTML = result.weather[0].description;
       tableInfo.cells[2].innerHTML = `<img class="weather-icon" src="http://openweathermap.org/img/wn/${result.weather[0].icon}@2x.png" alt="weather icon" >`;
       //console.log(result);
     });
